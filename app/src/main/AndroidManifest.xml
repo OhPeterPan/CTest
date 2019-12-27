@@ -20,6 +20,7 @@
         <activity android:name=".ui.HelloActivity" />
         <activity android:name=".ui.ComputeActivity" />
         <activity android:name=".ui.FaceActivity" />
+        <activity android:name=".ui.DESActivity" />
     </application>
 
 </manifest>

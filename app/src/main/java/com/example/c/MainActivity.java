@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.c.ui.ComputeActivity;
+import com.example.c.ui.DESActivity;
 import com.example.c.ui.FaceActivity;
 import com.example.c.ui.HelloActivity;
 
@@ -28,9 +29,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button1 = findViewById(R.id.button1);
         Button button2 = findViewById(R.id.button2);
         Button button3 = findViewById(R.id.button3);
+        Button button4 = findViewById(R.id.button4);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
+        button4.setOnClickListener(this);
     }
 
     @Override
@@ -46,7 +49,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button3:
                 startAct(FaceActivity.class);
                 break;
-
+                case R.id.button4:
+                startAct(DESActivity.class);
+                break;
         }
     }
 
