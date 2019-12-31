@@ -1,12 +1,15 @@
 package com.example.c;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.c.ui.BitmapActivity;
+import com.example.c.ui.BitmapChangeActivity;
 import com.example.c.ui.ComputeActivity;
 import com.example.c.ui.DESActivity;
 import com.example.c.ui.FaceActivity;
@@ -30,10 +33,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button2 = findViewById(R.id.button2);
         Button button3 = findViewById(R.id.button3);
         Button button4 = findViewById(R.id.button4);
+        Button button5 = findViewById(R.id.button5);
+        Button button6 = findViewById(R.id.button6);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
+        button5.setOnClickListener(this);
+        button6.setOnClickListener(this);
     }
 
     @Override
@@ -49,8 +56,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button3:
                 startAct(FaceActivity.class);
                 break;
-                case R.id.button4:
+            case R.id.button4:
                 startAct(DESActivity.class);
+                break;
+            case R.id.button5:
+                startAct(BitmapActivity.class);
+                break;
+            case R.id.button6:
+                startAct(BitmapChangeActivity.class);
                 break;
         }
     }
@@ -65,5 +78,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * A native method that is implemented by the 'native-lib' native library,
      * which is packaged with this application.
      */
-    // public native String stringFromJNI();
+
 }
